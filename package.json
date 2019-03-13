@@ -1,0 +1,20 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Website for SG & Associates",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "cleaning",
+    "janitorial",
+    "custodial",
+    "construction"
+  ],
+  "author": "Sheldrick Mayrant",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
