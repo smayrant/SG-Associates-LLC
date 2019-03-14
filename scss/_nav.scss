@@ -1,0 +1,37 @@
+.top-strip{
+    height: 5px;
+    width: 100%;
+    background: $primary-red;
+
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 130px;
+}
+
+.nav-right-container{
+    margin-left: 18rem;
+}
+
+.nav-links-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item{
+    margin-left: 1rem;
+}
+
+.nav-links-container{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: .7rem;
+}
