@@ -1,7 +1,7 @@
 .whyUs{
     height: 32rem;
     overflow: hidden;
-    background: #333;
+    background: #726d6b;
     
     &-text-container{
         margin-top: 4rem;
@@ -38,6 +38,9 @@
 
     &-list-item{
         list-style: none;
+        &:not(:last-child) { 
+            margin-bottom: 1rem;
+        }
     }
 
 }

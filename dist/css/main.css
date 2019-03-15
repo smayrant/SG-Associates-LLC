@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700");
-.top-strip {
+.nav-top-strip {
   height: 5px;
   width: 100%;
   background: #B31E21; }
 
 .nav-container {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
-.logo {
-  width: 130px; }
+.nav-logo {
+  margin-top: .3rem;
+  width: 200px; }
 
 .nav-right-container {
   margin-left: 18rem; }
@@ -19,14 +21,14 @@
   justify-content: space-around; }
 
 .nav-item {
-  margin-left: 1rem; }
+  margin-left: 1.5rem; }
 
 .nav-links-container {
   list-style: none; }
 
 .nav-link {
   text-decoration: none;
-  font-size: .7rem; }
+  letter-spacing: 1px; }
 
 .carousel-section {
   position: relative; }
@@ -106,7 +108,7 @@
 .whyUs {
   height: 32rem;
   overflow: hidden;
-  background: #333; }
+  background: #726d6b; }
   .whyUs-text-container {
     margin-top: 4rem;
     color: #fff; }
@@ -128,6 +130,8 @@
     margin: 0 auto; }
   .whyUs-list-item {
     list-style: none; }
+    .whyUs-list-item:not(:last-child) {
+      margin-bottom: 1rem; }
 
 .wrapper {
   margin-right: auto;
@@ -140,6 +144,10 @@
   text-align: center;
   font-weight: 700;
   text-transform: uppercase; }
+
+.active {
+  border-bottom: 1.5px solid #B31E21;
+  padding: .2rem; }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 * {
