@@ -1,0 +1,19 @@
+.philosophy{
+    margin: 5rem 0;
+
+    &-container{
+        margin: 0 auto;
+    }
+
+    &-line-break{
+        max-width: 16%;
+        border: 1.5px solid $primary-red;
+    }
+
+    &-text{
+        text-align: center;
+        max-width: 75%;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+}

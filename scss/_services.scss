@@ -1,0 +1,30 @@
+.services{
+    background: $primary-red;
+    padding: 5rem 0;
+    color: #fff;
+
+    &-individual{
+        &:nth-child(-n + 2){
+            padding-right: 1.5rem;
+        }
+    }
+
+    &-individual-container{
+        display: flex;
+    }
+    &-line-break{
+        max-width: 12%;
+        border: solid #fff 1.5px;
+        margin-bottom: 2rem;
+    }
+
+    &-header{
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &-text{
+        font-weight: 300;
+    }
+}
