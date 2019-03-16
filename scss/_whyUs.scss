@@ -1,7 +1,7 @@
 .whyUs{
     height: 32rem;
     overflow: hidden;
-    background: #726d6b;
+    background: #333;
     
     &-text-container{
         margin-top: 4rem;
@@ -29,6 +29,7 @@
     &-line-break{
         max-width: 14%;
         border: solid $primary-red 1.5px;
+        border-radius: 5px;
     }
 
     &-text{

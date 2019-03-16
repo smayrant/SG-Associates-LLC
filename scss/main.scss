@@ -4,6 +4,7 @@
 @import 'philosophy';
 @import 'services';
 @import 'whyUs';
+@import 'certifications';
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
 
@@ -56,6 +57,7 @@ html {
 body {
   margin: 0;
   font-family: 'Raleway' !important;
+  letter-spacing: 1.1px;
 }
 
 /**
