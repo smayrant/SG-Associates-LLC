@@ -37,5 +37,11 @@
 
     &-link{
         text-decoration: none;
+
+        &:hover{
+            border-bottom: 1.5px solid $primary-red;
+            padding: .2rem;
+            transition: all .3s ease-in-out; 
+        }
     }
 }

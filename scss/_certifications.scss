@@ -3,7 +3,7 @@
     color: #333;
     
     &-line-break{
-        max-width: 14%;
+        max-width: 8%;
         border: 2px solid $primary-red;
         border-radius: 5px;
     }
@@ -26,5 +26,76 @@
             max-width: 100%;
             max-height: 100%;
         }
+    }
+
+    &-naics-button-container{
+        text-align: center;
+        margin-top: .8rem;
+
+        button{
+            -moz-box-shadow: 1px 1px 0px 0px #8a2a21;
+            -webkit-box-shadow: 1px 1px 0px 0px #8a2a21;
+            box-shadow: 1px 1px 0px 0px #8a2a21;
+            background-color:#c62d1f;
+            -moz-border-radius:15px;
+            -webkit-border-radius:15px;
+            border-radius:15px;
+            border:1px solid #d02718;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-size:17px;
+            padding:7px 25px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #810e05;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                background-color:#333;
+                border:1px solid #333;
+            }
+
+            &:active{
+                position:relative;
+	            top:2px;
+            }
+
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// Certifications/NAICS Codes Stylings
+
+.hero{
+    &-line-break{
+         max-width: 29%;
+        border: 1.5px solid$primary-red;
+        border-radius: 5px;
+    }
+}
+
+.naics{
+
+    &-container{
+        margin: 0 auto;
+        width: 50%;
+    }
+    &-line-break{
+        max-width: 6%;
+        border: 2px solid $primary-red;
+        border-radius: 5px;
+    }
+
+    &-list-item{
+        text-transform: capitalize;
+        list-style: none;
+
+        // span{
+        //     padding-right: .5rem;
+        // }
     }
 }

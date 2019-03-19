@@ -1,10 +1,11 @@
 @import 'config';
 @import 'nav';
-@import 'carousel';
+@import 'hero';
 @import 'philosophy';
 @import 'services';
 @import 'whyUs';
 @import 'certifications';
+@import 'footer';
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
 
@@ -28,6 +29,13 @@
 .active{
   border-bottom: 1.5px solid $primary-red;
   padding: .2rem;
+}
+
+// top string styling
+.top-strip{
+    height: 5px;
+    width: 100%;
+    background: $primary-red;
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
