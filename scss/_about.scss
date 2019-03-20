@@ -1,0 +1,15 @@
+.about{
+    padding: 5rem 0;
+    color: #333;
+
+    &-line-break{
+        max-width: 4%;
+        border: 2px solid $primary-red;
+        border-radius: 5px;
+    }
+
+    &-container{
+        margin: 0 auto;
+    }
+
+}

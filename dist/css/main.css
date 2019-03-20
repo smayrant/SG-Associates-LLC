@@ -207,11 +207,22 @@
   text-transform: capitalize;
   list-style: none; }
 
+.about {
+  padding: 5rem 0;
+  color: #333; }
+  .about-line-break {
+    max-width: 4%;
+    border: 2px solid #B31E21;
+    border-radius: 5px; }
+  .about-container {
+    margin: 0 auto; }
+
 .footer {
   background: #333;
   margin-top: 3rem;
   margin-bottom: 0;
-  color: #fff; }
+  color: #fff;
+  height: 476.844; }
   .footer-header {
     text-align: center;
     text-transform: uppercase; }
