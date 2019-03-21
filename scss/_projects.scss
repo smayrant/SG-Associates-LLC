@@ -1,0 +1,32 @@
+.projects{
+    margin-top: 5rem;
+
+    &-line-break{
+        max-width: 15%;
+        border: 2px solid $primary-red;
+        border-radius: 5px;
+    }
+
+    &-grid-container{
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 1rem;
+        grid-row-gap: 1rem;
+        align-items: stretch;
+
+        img{
+            max-width: 100%;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+            transition: all .3s ease-in-out;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.hero-projects-line-break{
+    max-width: 45%;
+}

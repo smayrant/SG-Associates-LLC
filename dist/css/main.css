@@ -27,11 +27,13 @@
   list-style: none; }
 
 .nav-link {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #333;
+  padding: .2rem; }
   .nav-link:hover {
     border-bottom: 1.5px solid #B31E21;
-    padding: .2rem;
-    transition: all .3s ease-in-out; }
+    transition: all .2s ease-in;
+    color: #B31E21; }
 
 .hero-section {
   position: relative; }
@@ -122,7 +124,8 @@
     display: flex; }
   .whyUs-img {
     max-width: 100%;
-    max-height: 100%; }
+    max-height: 100%;
+    object-fit: cover; }
   .whyUs-right {
     align-self: flex-start;
     width: 50%; }
@@ -195,8 +198,7 @@
   border-radius: 5px; }
 
 .naics-container {
-  margin: 0 auto;
-  width: 50%; }
+  margin: 0 auto; }
 
 .naics-line-break {
   max-width: 6%;
@@ -206,6 +208,8 @@
 .naics-list-item {
   text-transform: capitalize;
   list-style: none; }
+  .naics-list-item span {
+    padding-right: .5rem; }
 
 .about {
   padding: 5rem 0;
@@ -217,9 +221,33 @@
   .about-container {
     margin: 0 auto; }
 
+.projects {
+  margin-top: 5rem; }
+  .projects-line-break {
+    max-width: 15%;
+    border: 2px solid #B31E21;
+    border-radius: 5px; }
+  .projects-grid-container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 1rem;
+    grid-row-gap: 1rem;
+    align-items: stretch; }
+    .projects-grid-container img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+      transition: all .3s ease-in-out; }
+      .projects-grid-container img:hover {
+        transform: scale(1.2); }
+
+.hero-projects-line-break {
+  max-width: 45%; }
+
 .footer {
   background: #333;
-  margin-top: 3rem;
+  margin-top: 6rem;
   margin-bottom: 0;
   color: #fff;
   height: 476.844; }
@@ -266,6 +294,8 @@
     .footer-bottom-text {
       text-align: center;
       font-size: .8rem; }
+  .footer-grey {
+    color: #828282; }
 
 .wrapper {
   margin-right: auto;
@@ -312,7 +342,18 @@ html {
 body {
   margin: 0;
   font-family: 'Raleway' !important;
-  letter-spacing: 1.1px; }
+  letter-spacing: 1.1px;
+  display: flex;
+  flex-flow: column; }
+
+.root {
+  display: flex;
+  min-height: 100vh;
+  flex-flow: column nowrap;
+  flex-grow: 1; }
+
+.main-content {
+  flex: 1 0 auto; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and

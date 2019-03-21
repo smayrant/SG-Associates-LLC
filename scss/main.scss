@@ -6,6 +6,7 @@
 @import 'whyUs';
 @import 'certifications';
 @import 'about';
+@import 'projects';
 @import 'footer';
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
@@ -67,6 +68,20 @@ body {
   margin: 0;
   font-family: 'Raleway' !important;
   letter-spacing: 1.1px;
+  display: flex;
+    flex-flow: column;
+}
+
+// stylings for sticky footer
+.root {
+    display: flex;
+    min-height: 100vh;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+}
+
+.main-content{
+  flex: 1 0 auto;
 }
 
 /**
