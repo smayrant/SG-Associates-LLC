@@ -29,3 +29,23 @@
         font-weight: 300;
     }
 }
+
+.top-services{
+    &-container{
+        margin: 5rem 0;
+    }
+   &-line-break{
+        max-width: 9%;
+        border: 2px solid $primary-red;
+        border-radius: 5px;
+    }
+}
+
+.services-image{
+    background: url(../images/servicesBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15rem;
+    position: relative;
+}
