@@ -55,12 +55,12 @@
 
 button#next {
   position: absolute;
-  top: 50%;
+  top: 20%;
   right: 15px; }
 
 button#prev {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 15px; }
 
 .buttons button {
@@ -114,10 +114,10 @@ button#prev {
   background: url("../images/hero-pic1.jpeg") no-repeat center center/cover; }
 
 .slide:nth-child(2) {
-  background: url("https://source.unsplash.com/BeOW_PJjA0w/1600x900") no-repeat center center/cover; }
+  background: url("../images/broom.jpg") no-repeat center center/cover; }
 
 .slide:nth-child(3) {
-  background: url("https://source.unsplash.com/TMOeGZw9NY4/1600x900") no-repeat center center/cover; }
+  background: url("../images/cleaning-supplies.jpg") no-repeat center center/cover; }
 
 .hero-section {
   position: relative; }
