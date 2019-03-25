@@ -67,10 +67,10 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Raleway' !important;
+  font-family: 'Raleway', sans-serif !important;
   letter-spacing: 1.1px;
   display: flex;
-    flex-flow: column;
+  flex-flow: column;
 }
 
 // stylings for sticky footer

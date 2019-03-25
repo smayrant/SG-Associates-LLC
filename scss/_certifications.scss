@@ -90,11 +90,18 @@
     }
 
     &-list-item{
+        display: flex;
+        align-content: stretch;
         text-transform: capitalize;
         list-style: none;
+        padding-bottom: .5rem;
 
         span{
             padding-right: .5rem;
+            font-weight: 700;
+            color: $primary-red;
+            width: 40px !important;
+            margin: 0 2rem;
         }
     }
 }

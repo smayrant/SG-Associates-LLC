@@ -1,9 +1,13 @@
+// elements for image slider
 const slides = document.querySelectorAll(".slide");
 const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
 const auto = true;
 const intervalTime = 5000;
 let slideInterval;
+
+// elements for mobile nav menu
+
 
 const nextSlide = () => {
     const current = document.querySelector('.current');
