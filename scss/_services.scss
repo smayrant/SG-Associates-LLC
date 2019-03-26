@@ -57,6 +57,18 @@
          &-individual-container{
             grid-template-columns: 50% 50%;
         }
+
+        &-individual{
+            padding: .5rem;
+        }
+
+        &-individual:nth-child(-n + 2) {
+        padding-right: .5rem;
+        }
+
+        // &-individual:nth-child(even) {
+        // margin-left: 1rem;
+        // }
     }
 }
 

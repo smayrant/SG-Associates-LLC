@@ -287,7 +287,11 @@ button#prev {
 
 @media all and (max-width: 835px) {
   .services-individual-container {
-    grid-template-columns: 50% 50%; } }
+    grid-template-columns: 50% 50%; }
+  .services-individual {
+    padding: .5rem; }
+  .services-individual:nth-child(-n + 2) {
+    padding-right: .5rem; } }
 
 @media all and (max-width: 540px) {
   .services-individual-container {
@@ -390,6 +394,8 @@ button#prev {
     .certifications-image img {
       max-width: 100%;
       max-height: 100%; }
+    .certifications-image:hover {
+      transform: scale(); }
   .certifications-naics-button-container {
     text-align: center;
     margin-top: .8rem; }
@@ -438,13 +444,38 @@ button#prev {
   align-content: stretch;
   text-transform: capitalize;
   list-style: none;
-  padding-bottom: .5rem; }
+  padding-bottom: 1rem; }
   .naics-list-item span {
     padding-right: .5rem;
     font-weight: 700;
     color: #B31E21;
     width: 40px !important;
     margin: 0 2rem; }
+
+@media all and (max-width: 700px) {
+  .certifications-image-container {
+    flex-direction: column;
+    align-items: center; }
+  .certifications-image {
+    margin-bottom: 3rem;
+    padding: 0 1rem; }
+    .certifications-image img {
+      text-align: center;
+      width: 100%; }
+  .certifications-header {
+    font-size: 3rem; } }
+
+@media all and (max-width: 538px) {
+  .certifications-header {
+    font-size: 2.2rem; }
+  .naics-list-container {
+    padding-left: 0; } }
+
+@media all and (max-width: 400px) {
+  .certifications-header {
+    font-size: 1.7rem; }
+  .naics-list-item {
+    margin-bottom: 1.5rem; } }
 
 .about {
   padding: 5rem 0;
