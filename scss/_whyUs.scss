@@ -46,3 +46,76 @@
     }
 
 }
+
+@media all and (max-width: 1200px) {
+    .whyUs{
+        &-left{
+        width: 65%;
+        }
+
+        &-text{
+            width: 80%;
+        }
+    }
+}
+
+@media all and (max-width: 1078px) {
+    .whyUs{
+        &-left{
+        width: 75%;
+        }
+
+        &-text{
+            width: 95%;
+        }
+    }
+}
+
+@media all and (max-width: 988px) {
+    .whyUs{
+       height: auto;
+       &-container{
+           display: flex;
+           flex-direction: column;
+       }
+
+      &-left{
+          display: block;
+          width: 100%;
+          height: 20rem;
+      }
+      &-img{
+          width: 100%;
+      }
+      &-right{
+          display: block;
+          width: 100%;
+      }
+      &-text{
+          margin: 1rem auto 3rem auto;
+          width: 70%;
+      }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .whyUs{
+        &-list{
+            padding-left: 0;
+        }
+        &-text{
+            width: 80%;
+        }
+    }
+}
+@media all and (max-width: 400px) {
+    .whyUs{
+        &-text{
+            width: 90%;
+        }
+
+        &-list{
+            font-size: .9rem;
+        }
+    }
+}

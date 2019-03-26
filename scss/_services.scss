@@ -7,10 +7,12 @@
         &:nth-child(-n + 2){
             padding-right: 1.5rem;
         }
+        text-align: center;
     }
 
     &-individual-container{
-        display: flex;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
     }
     &-line-break{
         max-width: 9%;
@@ -21,7 +23,7 @@
 
     &-header{
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: 700;
         text-align: center;
     }
 
@@ -48,4 +50,29 @@
     background-size: cover;
     padding: 15rem;
     position: relative;
+}
+
+@media all and(max-width: 835px){
+    .services{
+         &-individual-container{
+            grid-template-columns: 50% 50%;
+        }
+    }
+}
+
+@media all and(max-width: 540px){
+    .services{
+         &-individual-container{
+            grid-template-columns: 100%;
+        }
+
+        &-individual{
+            margin-bottom: 2.5rem;
+        }
+
+        &-text{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
 }

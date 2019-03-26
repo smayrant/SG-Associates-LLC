@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700");
 .nav {
-  height: 8vh; }
+  height: 80px; }
   .nav-top-strip {
     height: 5px;
     width: 100%;
@@ -37,7 +37,8 @@
     height: 3px;
     background-color: #B31E21;
     margin: 5px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all .3s ease-in-out; }
 
 @media all and (max-width: 1100px) {
   .nav-right-container {
@@ -53,7 +54,7 @@
     position: absolute;
     right: 0;
     height: 100vh;
-    top: 8vh;
+    top: 80px;
     background-color: #B31E21;
     z-index: 999;
     display: flex;
@@ -66,11 +67,30 @@
     transition: transform .5s ease-in-out; }
   .nav-item {
     opacity: 0; }
+  .nav-link {
+    color: #fff; }
   .nav-burger {
     display: block; } }
 
 .mobile-nav-active {
   transform: translateX(0%); }
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateZ(50px); }
+  to {
+    opacity: 1;
+    transform: translateZ(0px); } }
+
+.burger-toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px); }
+
+.burger-toggle .line2 {
+  opacity: 0; }
+
+.burger-toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px); }
 
 .slider {
   position: relative;
@@ -199,6 +219,18 @@ button#prev {
   bottom: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25)); }
 
+@media all and (max-width: 500px) {
+  .hero-header {
+    font-size: 3rem; }
+  .hero-text {
+    font-size: 1rem; } }
+
+@media all and (max-width: 380px) {
+  .hero-header {
+    font-size: 2rem; }
+  .hero-text {
+    font-size: .8rem; } }
+
 .philosophy {
   color: #333;
   margin: 5rem 0; }
@@ -218,10 +250,13 @@ button#prev {
   background: #B31E21;
   padding: 5rem 0;
   color: #fff; }
-  .services-individual:nth-child(-n + 2) {
-    padding-right: 1.5rem; }
+  .services-individual {
+    text-align: center; }
+    .services-individual:nth-child(-n + 2) {
+      padding-right: 1.5rem; }
   .services-individual-container {
-    display: flex; }
+    display: grid;
+    grid-template-columns: 33% 33% 33%; }
   .services-line-break {
     max-width: 9%;
     border: solid #fff 1.5px;
@@ -229,7 +264,7 @@ button#prev {
     border-radius: 5px; }
   .services-header {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center; }
   .services-text {
     font-weight: 300; }
@@ -249,6 +284,19 @@ button#prev {
   background-size: cover;
   padding: 15rem;
   position: relative; }
+
+@media all and (max-width: 835px) {
+  .services-individual-container {
+    grid-template-columns: 50% 50%; } }
+
+@media all and (max-width: 540px) {
+  .services-individual-container {
+    grid-template-columns: 100%; }
+  .services-individual {
+    margin-bottom: 2.5rem; }
+  .services-text {
+    max-width: 80%;
+    margin: 0 auto; } }
 
 .whyUs {
   height: 32rem;
@@ -279,6 +327,49 @@ button#prev {
     list-style: none; }
     .whyUs-list-item:not(:last-child) {
       margin-bottom: 1rem; }
+
+@media all and (max-width: 1200px) {
+  .whyUs-left {
+    width: 65%; }
+  .whyUs-text {
+    width: 80%; } }
+
+@media all and (max-width: 1078px) {
+  .whyUs-left {
+    width: 75%; }
+  .whyUs-text {
+    width: 95%; } }
+
+@media all and (max-width: 988px) {
+  .whyUs {
+    height: auto; }
+    .whyUs-container {
+      display: flex;
+      flex-direction: column; }
+    .whyUs-left {
+      display: block;
+      width: 100%;
+      height: 20rem; }
+    .whyUs-img {
+      width: 100%; }
+    .whyUs-right {
+      display: block;
+      width: 100%; }
+    .whyUs-text {
+      margin: 1rem auto 3rem auto;
+      width: 70%; } }
+
+@media all and (max-width: 600px) {
+  .whyUs-list {
+    padding-left: 0; }
+  .whyUs-text {
+    width: 80%; } }
+
+@media all and (max-width: 400px) {
+  .whyUs-text {
+    width: 90%; }
+  .whyUs-list {
+    font-size: .9rem; } }
 
 .certifications {
   padding: 5rem 0;
@@ -407,8 +498,7 @@ button#prev {
   background: #333;
   margin-top: 6rem;
   margin-bottom: 0;
-  color: #fff;
-  height: 476.844; }
+  color: #fff; }
   .footer-header {
     text-align: center;
     text-transform: uppercase; }
@@ -416,7 +506,7 @@ button#prev {
     border: solid 1.5px #B31E21;
     width: 20%; }
   .footer-content-container {
-    margin-top: 3rem;
+    margin: 3rem 2rem 0 2rem;
     display: flex;
     justify-content: center;
     line-height: 24px; }
@@ -427,23 +517,24 @@ button#prev {
   .footer-content-middle {
     padding: 0 5rem;
     max-width: 38rem; }
+  .footer-content-left {
+    width: 33%; }
+  .footer-content-right {
+    width: 33%; }
   .footer-social-media-container {
     padding: 3rem 0; }
   .footer-social-media-links-container {
     text-align: center; }
     .footer-social-media-links-container a {
-      color: #fff;
       text-decoration: none;
-      background-color: #B31E21;
-      padding: .5rem;
       text-align: center;
-      font-size: 1.2rem;
-      border-radius: 100%; }
+      font-size: 1.2rem; }
       .footer-social-media-links-container a:nth-child(-n+3) {
         margin-right: 1rem; }
       .footer-social-media-links-container a i {
-        color: #fff;
-        border: none; }
+        color: #B31E21;
+        border: none;
+        font-size: 2rem; }
   .footer-bottom {
     background: black;
     padding: .2rem; }
@@ -452,6 +543,42 @@ button#prev {
       font-size: .8rem; }
   .footer-grey {
     color: #828282; }
+
+@media all and (max-width: 900px) {
+  .footer-content-middle {
+    padding: 0 1rem; } }
+
+@media all and (max-width: 870px) {
+  .footer-content-middle {
+    padding: 0; }
+  .footer-content-container {
+    flex-direction: column; }
+  .footer-header {
+    text-align: left; }
+  .footer-sitemap {
+    padding: 0; }
+  .footer-who-we-are {
+    max-width: 70%; }
+  .footer-line-break {
+    margin: 0; }
+  .footer-contact-info {
+    margin-top: 16px; }
+  .footer-content {
+    width: 100%; }
+  .right-line, .middle-line, .left-line {
+    width: 10% !important; }
+  .social-header {
+    text-align: center; } }
+
+@media all and (max-width: 600px) {
+  .footer-content {
+    margin-bottom: 2rem; }
+  .footer-who-we-are {
+    max-width: 100%; } }
+
+@media all and (max-width: 400px) {
+  .footer-content-container {
+    margin: 3rem 2rem 0 1rem; } }
 
 .wrapper {
   margin-right: auto;

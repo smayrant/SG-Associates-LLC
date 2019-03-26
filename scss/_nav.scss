@@ -1,5 +1,5 @@
 .nav{
-    height: 8vh;
+    height: 80px;
 
     &-top-strip{
     height: 5px;
@@ -59,6 +59,7 @@
         background-color: $primary-red;
         margin: 5px;
         cursor: pointer;
+        transition: all .3s ease-in-out;
     }
 }
 
@@ -84,7 +85,7 @@
             position: absolute;
             right: 0;
             height: 100vh;
-            top: 8vh;
+            top: 80px;
             background-color: $primary-red;
             z-index: 999;
             display: flex;
@@ -100,6 +101,10 @@
             opacity: 0;
         }
 
+        &-link{
+            color: #fff;
+        }
+
         &-burger{
             display: block;
         }
@@ -108,4 +113,25 @@
 
 .mobile-nav-active{
     transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateZ(50px)
+    }
+    to{
+        opacity: 1;
+        transform: translateZ(0px)
+    }
+}
+
+.burger-toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.burger-toggle .line2{
+    opacity: 0;
+}
+.burger-toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }

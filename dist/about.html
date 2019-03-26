@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SG &amp; Associates - About</title>
+    <title>SG &amp; Associates - Home</title>
     <!-- Mobile header color for Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#B31E21" />
     <!-- Mobile header color Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#B31E21" />
     <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -19,7 +26,7 @@
 <body>
     <div class="root">
         <header class="nav">
-            <div class="nav-top-strip"></div>
+            <div class="top-strip"></div>
             <nav class="nav-container">
                 <div class="nav-left-container">
                     <img class="nav-logo" src="images/logo.jpg" alt="Site Logo">
@@ -27,10 +34,10 @@
                 <div class="nav-right-container">
                     <ul class="nav-links-container">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="certifications.html">Certifications</a>
@@ -42,6 +49,11 @@
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
                     </ul>
+                </div>
+                <div class="nav-burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
             </nav>
         </header>
@@ -106,22 +118,21 @@
                 </div>
                 <div class="footer-content-middle footer-content">
                     <h3 class="footer-header">Who We Are</h3>
-                    <hr class="footer-line-break">
+                    <hr class="footer-line-break middle-line">
                     <p class="footer-who-we-are footer-grey">We are an 8(a), minority, woman-owned business. We provide quality service to public and private industries
                         in addition to government contracting.</p>
                 </div>
                 <div class="footer-content-right footer-content">
                     <h3 class="footer-header">Contact Us</h3>
-                    <hr class="footer-line-break">
-                    <div class="footer-contact-info footer-grey">
-                        Main Phone: 240-585-2218
+                    <hr class="footer-line-break right-line">
+                    <div class="footer-contact-info footer-grey"> Main Phone: 240-585-2218
                         <br> Email: sgross@sgandassociatesllc.com
                         <br> Sales Inquiries: smayrant@sgandassociatesllc.com
                     </div>
                 </div>
             </div>
             <div class="footer-social-media-container">
-                <h3 class="footer-header">visit us on our social networks</h3>
+                <h3 class="footer-header social-header">visit us on our social networks</h3>
                 <div class="footer-social-media-links-container">
                     <a href="https://www.yelp.com/biz/sg-and-associates-fort-washington" target="_blank">
                         <i class="fab fa-yelp"></i>
@@ -140,6 +151,7 @@
         </section>
 
     </div>
+    <script src="js/mobile-nav.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,6 @@
     margin-top: 6rem;
     margin-bottom: 0;
     color: #fff;
-    height: 476.844;
 
     &-header{
         text-align: center;
@@ -16,7 +15,7 @@
     }
 
     &-content-container{
-        margin-top: 3rem;
+        margin: 3rem 2rem 0 2rem;
         display: flex;
         justify-content: center;
         line-height: 24px; 
@@ -35,6 +34,13 @@
     &-content-middle{
         padding: 0 5rem;
         max-width: 38rem;
+        
+    }
+    &-content-left{
+     width: 33%;
+    }
+    &-content-right{
+     width: 33%;
     }
 
     &-social-media-container{
@@ -43,22 +49,18 @@
 
     &-social-media-links-container{
         text-align: center;
-        a{
-            color: #fff;
+        a{      
             text-decoration: none;
-            background-color: $primary-red;
-            padding: .5rem;
             text-align: center;
             font-size: 1.2rem;
-            border-radius: 100%;
-            
             &:nth-child(-n+3){
                 margin-right: 1rem;
             }
             
             i{   
-                color: #fff;
+                color: $primary-red;
                 border: none;
+                font-size: 2rem;
             }
         }
     }
@@ -77,4 +79,76 @@
         color: lighten(#707070, 7%);
     }
 
+}
+
+@media all and (max-width: 900px) {
+    .footer{
+        &-content-middle{
+            padding: 0 1rem;
+        }
+    }
+}
+
+@media all and (max-width: 870px) {
+    .footer{
+        &-content-middle{
+            padding: 0;
+        }
+
+        &-content-container{
+            flex-direction: column;
+        }
+
+        &-header{
+            text-align: left;
+        }
+        &-sitemap{
+            padding: 0;
+        }
+
+        &-who-we-are{
+            max-width: 70%;
+        }
+
+        &-line-break{
+            margin: 0;
+        }
+
+        &-contact-info{
+            margin-top: 16px;
+        }
+
+        &-content{
+            width: 100%;
+        }
+    }
+    
+    .right-line, .middle-line, .left-line{
+        width: 10% !important;
+    }
+
+    .social-header{
+        text-align: center;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    .footer{
+
+        &-content{
+            margin-bottom: 2rem;
+        }
+        &-who-we-are{
+            max-width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 400px) {
+    .footer{
+        &-content-container{
+            margin: 3rem 2rem 0 1rem;
+        }
+    }
 }
