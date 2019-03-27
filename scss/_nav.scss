@@ -111,6 +111,12 @@
     }
 }
 
+@media all and (max-width: 600px){
+    .nav-links-container{
+        width: 80%;
+    }
+}
+
 .mobile-nav-active{
     transform: translateX(0%);
 }
