@@ -19,6 +19,15 @@
         margin-top: 2rem;
     }
 
+    &-hero-image{
+        background: url("../images/clean-sink.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15rem;
+        position: relative;
+    }
+
     &-image{
         width: 20rem;
 
