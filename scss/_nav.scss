@@ -1,10 +1,13 @@
 .nav{
     height: 80px;
-
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
     &-top-strip{
     height: 5px;
     width: 100%;
     background: $primary-red;
+
 
     }
 
@@ -90,12 +93,13 @@
             z-index: 999;
             display: flex;
             flex-direction: column;
-            width: 50%;
-            align-items: center;
+            width: 70%;
             margin: 0;
             padding: 0;
-            transform: translateX(100%);
-            transition: transform .5s ease-in-out;
+            clip-path: circle(10px at 90% -10%);
+            -webkit-clip-path: circle(10px at 90% -10%);
+            transition: all .6s ease-in-out;
+            align-items: center;
         }
         &-item{
             opacity: 0;
@@ -113,12 +117,13 @@
 
 @media all and (max-width: 600px){
     .nav-links-container{
-        width: 80%;
+        width: 100%;
     }
 }
 
 .mobile-nav-active{
-    transform: translateX(0%);
+    clip-path: circle(2000px at 90% -10%);
+    -webkit-clip-path: circle(2000px at 90% -10%);
 }
 
 @keyframes navLinkFade{
@@ -140,4 +145,10 @@
 }
 .burger-toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 3px 21px -1px rgba(0,0,0,0.75);
 }

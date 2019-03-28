@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700");
 .nav {
-  height: 80px; }
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100; }
   .nav-top-strip {
     height: 5px;
     width: 100%;
@@ -59,12 +62,13 @@
     z-index: 999;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    align-items: center;
+    width: 70%;
     margin: 0;
     padding: 0;
-    transform: translateX(100%);
-    transition: transform .5s ease-in-out; }
+    clip-path: circle(10px at 90% -10%);
+    -webkit-clip-path: circle(10px at 90% -10%);
+    transition: all .6s ease-in-out;
+    align-items: center; }
   .nav-item {
     opacity: 0; }
   .nav-link {
@@ -74,10 +78,11 @@
 
 @media all and (max-width: 600px) {
   .nav-links-container {
-    width: 80%; } }
+    width: 100%; } }
 
 .mobile-nav-active {
-  transform: translateX(0%); }
+  clip-path: circle(2000px at 90% -10%);
+  -webkit-clip-path: circle(2000px at 90% -10%); }
 
 @keyframes navLinkFade {
   from {
@@ -95,6 +100,11 @@
 
 .burger-toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px); }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 3px 21px -1px rgba(0, 0, 0, 0.75); }
 
 .slider {
   position: relative;
@@ -539,7 +549,7 @@ button#prev {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 150;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -632,7 +642,8 @@ button#prev {
   .footer-content-middle {
     padding: 0; }
   .footer-content-container {
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 0 1.25rem !important; }
   .footer-header {
     text-align: left; }
   .footer-sitemap {
