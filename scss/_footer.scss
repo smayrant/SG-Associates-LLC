@@ -65,6 +65,10 @@
         }
     }
 
+    &-email{
+        color: lighten($primary-red, 15%);
+    }
+
     &-bottom{
         background: darken(#333, 20%);
         padding: .2rem;
@@ -117,8 +121,9 @@
 
         &-contact-info{
             margin-top: 16px;
-        }
 
+        } 
+        
         &-content{
             width: 100%;
         }

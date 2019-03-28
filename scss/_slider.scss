@@ -12,7 +12,7 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.3s ease;
 }
 
 .slide.current {
@@ -72,11 +72,11 @@ button#prev{
         text-align: center;
 }
 
-.darken-img{
+.current{
     position: relative;
 }
 
-.darken-img::before {
+.current::before {
     content: "";
     position: absolute;
     top: 0;

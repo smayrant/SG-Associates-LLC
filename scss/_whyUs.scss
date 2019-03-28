@@ -47,6 +47,15 @@
 
 }
 
+// prevents the image from being forced to stretch too far on 4k resolution monitors
+@media all and (min-width: 3500px) {
+    .whyUs{
+        &-left{
+        width: 45%;
+        }
+    }
+}
+
 @media all and (max-width: 1200px) {
     .whyUs{
         &-left{

@@ -119,7 +119,7 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.4s ease-in-out; }
+  transition: opacity 0.3s ease; }
 
 .slide.current {
   opacity: 1; }
@@ -168,10 +168,10 @@ button#prev {
   transform: translate(-50%, -50%);
   text-align: center; }
 
-.darken-img {
+.current {
   position: relative; }
 
-.darken-img::before {
+.current::before {
   content: "";
   position: absolute;
   top: 0;
@@ -345,6 +345,10 @@ button#prev {
     list-style: none; }
     .whyUs-list-item:not(:last-child) {
       margin-bottom: 1rem; }
+
+@media all and (min-width: 3500px) {
+  .whyUs-left {
+    width: 45%; } }
 
 @media all and (max-width: 1200px) {
   .whyUs-left {
@@ -625,6 +629,8 @@ button#prev {
         color: #B31E21;
         border: none;
         font-size: 2rem; }
+  .footer-email {
+    color: #df3f42; }
   .footer-bottom {
     background: black;
     padding: .2rem; }
@@ -767,7 +773,9 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 a {
-  background-color: transparent; }
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: none; }
 
 /**
  * 1. Remove the bottom border in Chrome 57-

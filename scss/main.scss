@@ -127,7 +127,8 @@ pre {
  */
 
 a {
-  background-color: transparent;
+  color: inherit; /* blue colors for links too */
+  text-decoration: none;
 }
 
 /**
