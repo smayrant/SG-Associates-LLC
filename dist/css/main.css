@@ -47,7 +47,7 @@
   .nav-right-container {
     margin-left: auto; } }
 
-@media all and (max-width: 815px) {
+@media all and (max-width: 835px) {
   body, html {
     position: relative;
     overflow-x: hidden !important; }
@@ -68,7 +68,8 @@
     clip-path: circle(10px at 90% -10%);
     -webkit-clip-path: circle(10px at 90% -10%);
     transition: all .6s ease-in-out;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-evenly; }
   .nav-item {
     opacity: 0; }
   .nav-link {
