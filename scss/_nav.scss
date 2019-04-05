@@ -100,11 +100,12 @@
             -webkit-clip-path: circle(10px at 90% -10%);
             transition: all .6s ease-in-out;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: center;
             
         }
         &-item{
             opacity: 0;
+            margin-bottom: 5rem;
         }
 
         &-link{

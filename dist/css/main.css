@@ -69,9 +69,10 @@
     -webkit-clip-path: circle(10px at 90% -10%);
     transition: all .6s ease-in-out;
     align-items: center;
-    justify-content: space-evenly; }
+    justify-content: center; }
   .nav-item {
-    opacity: 0; }
+    opacity: 0;
+    margin-bottom: 5rem; }
   .nav-link {
     color: #fff; }
   .nav-burger {
@@ -261,27 +262,25 @@ button#prev {
     margin: 0 auto;
     padding-top: 1rem; }
 
-.services {
+.capabilities {
   background: #B31E21;
-  padding: 5rem 0;
+  padding: 3rem 0;
   color: #fff; }
-  .services-individual {
-    text-align: center; }
-    .services-individual:nth-child(-n + 2) {
-      padding-right: 1.5rem; }
-  .services-individual-container {
+  .capabilities-individual-container {
     display: grid;
-    grid-template-columns: 33% 33% 33%; }
-  .services-line-break {
-    max-width: 9%;
+    grid-template-columns: 50% 50%;
+    line-height: 1.9;
+    text-transform: capitalize; }
+  .capabilities-line-break {
+    max-width: 11%;
     border: solid #fff 1.5px;
     margin-bottom: 2rem;
     border-radius: 5px; }
-  .services-header {
+  .capabilities-header {
     text-transform: uppercase;
     font-weight: 700;
     text-align: center; }
-  .services-text {
+  .capabilities-text {
     font-weight: 300; }
 
 .top-services-container {
@@ -292,7 +291,7 @@ button#prev {
   border: 2px solid #B31E21;
   border-radius: 5px; }
 
-.services-image {
+.capabilities-image {
   background: url(../images/servicesBG.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -300,27 +299,53 @@ button#prev {
   padding: 15rem;
   position: relative; }
 
+.we-service-line-break {
+  max-width: 5%;
+  border: 2px solid #B31E21;
+  border-radius: 5px; }
+
+.we-service-header {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 5rem; }
+
+.we-service-sub-header {
+  color: #153570; }
+
+.we-service-main-container {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: space-evenly; }
+
+.we-service-container-government, .we-service-container-commercial {
+  margin-bottom: 2rem; }
+
 @media all and (max-width: 835px) {
-  .services-individual-container {
+  .capabilities-individual-container {
     grid-template-columns: 50% 50%; }
-  .services-individual {
+  .capabilities-individual {
     padding: .5rem; }
-  .services-individual:nth-child(-n + 2) {
+  .capabilities-individual:nth-child(-n + 2) {
     padding-right: .5rem; } }
 
 @media all and (max-width: 540px) {
-  .services-individual-container {
+  .capabilities-individual-container {
     grid-template-columns: 100%; }
-  .services-individual {
+  .capabilities-individual {
     margin-bottom: 2.5rem; }
-  .services-text {
+  .capabilities-text {
     max-width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .capabilities-list-container-left {
+    margin-bottom: 0; }
+  .capabilities-list-container-right {
+    margin-top: 0; } }
 
 .whyUs {
   height: 32rem;
   overflow: hidden;
-  background: #333; }
+  background: #153570; }
   .whyUs-text-container {
     margin-top: 4rem;
     color: #fff; }
@@ -443,8 +468,8 @@ button#prev {
       text-shadow: 0px 1px 0px #810e05;
       transition: all .3s ease-in-out; }
       .certifications-naics-button-container button:hover {
-        background-color: #333;
-        border: 1px solid #333; }
+        background-color: #153570;
+        border: 1px solid #153570; }
       .certifications-naics-button-container button:active {
         position: relative;
         top: 2px; }
@@ -604,7 +629,7 @@ button#prev {
   transform: scale(2.1); }
 
 .footer {
-  background: #333;
+  background: #153570;
   margin-top: 6rem;
   margin-bottom: 0;
   color: #fff; }
@@ -647,13 +672,13 @@ button#prev {
   .footer-email {
     color: #df3f42; }
   .footer-bottom {
-    background: black;
+    background: #0d2145;
     padding: .2rem; }
     .footer-bottom-text {
       text-align: center;
       font-size: .8rem; }
   .footer-grey {
-    color: #828282; }
+    color: #c9c9c9; }
 
 @media all and (max-width: 900px) {
   .footer-content-middle {
